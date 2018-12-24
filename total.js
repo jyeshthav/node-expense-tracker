@@ -7,7 +7,7 @@ module.exports = (x,y,c,callback) => {
     if (c == 1){
         setTimeout(() => 
             callback(null, {
-                expense: () => (x + y)
+                expense: () => (parseInt(x) + parseInt(y)),
             }), 
             2000);
 
