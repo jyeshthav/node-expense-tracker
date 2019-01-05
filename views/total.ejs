@@ -8,11 +8,44 @@
 </head>
 <body>
     <div class="jumbotron text-center">
-        <p>
-            <h1> <%= qst %> </h1>
-        </p>
-        <form action="/">
-            <button type="submit" class="btn btn-primary">Update</button>
+        <h1>Current status</h1>
+            <form action="/dummy" method="post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td>Travel expense: </td>
+                                    <td><input type="text" id="expense" name="update1" placeholder="Travel Expense" value="<%= qst[0] %>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Food expense: </td>
+                                    <td><input type="text" id="expense" name="update2" placeholder="Food Expense" value="<%= qst[1] %>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Other expense: </td>
+                                    <td><input type="text" id="expense" name="update3" placeholder="Other Expense" value="<%= qst[2] %>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total expense: </td>
+                                    <td><input type="text" id="expense" name="update4" placeholder="Total Expense" value="<%= qst[3] %>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total income: </td>
+                                    <td><input type="text" id="expense" name="update5" placeholder="Total Income" value="<%= qst[4] %>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total saving: </td>
+                                    <td><input type="text" id="expense" name="update6" placeholder="Total Save" value="<%= qst[5] %>"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                </div>
+                
+            <button type="submit" class="btn btn-primary">OK, proceed</button>
         </form>
     </div>
 </body>
